@@ -1,0 +1,8 @@
+message Target {
+	enum TargetType {
+		USER = 0;
+		GROUP = 1;
+	}
+	required TargetType type = 1;
+	required string name = 2;
+}

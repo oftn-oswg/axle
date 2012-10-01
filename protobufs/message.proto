@@ -1,0 +1,17 @@
+import "blob.proto";
+import "target.proto";
+
+message Message {
+
+	// Date and time message was created
+	required int64 timestamp = 1;
+
+	// Server name
+	required string server_name = 2;
+
+	// From and to fields
+	required Target sender = 3;
+	required Target recipient = 4;
+
+	repeated Blob data = 5;
+}

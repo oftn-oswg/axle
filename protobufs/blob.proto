@@ -1,0 +1,4 @@
+message Blob {
+	optional string mime_type = 1;
+	required bytes payload = 2;
+}
